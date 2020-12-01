@@ -24,7 +24,6 @@
         <div class="container">
             <div class="inner-sec py-lg-5 py-3">
                 <h2 class="tittle text-center"> Pembayaran</h2> <br>
-
                 <div class="btn btn-sm btn-success">
                     <?php $grand_total = 0;
                     if ($keranjang = $this->cart->contents()) {
@@ -34,7 +33,7 @@
                         echo "<h4>Total Belanja Anda: Rp. " . number_format($grand_total, 0, ',', '.');
                     ?>
                 </div><br><br>
-                <form method="POST" action="<?php echo base_url() ?>proses_pembayaran">
+                <form method="POST" action="<?php echo base_url() ?>pembayaran/proses_pembayaran/">
                     <div class="form-group">
                         <label>Nama Lengkap</label>
                         <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control">

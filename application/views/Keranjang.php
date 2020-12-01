@@ -62,7 +62,7 @@
                             <a href="<?php echo base_url('KeranjangBelanja/hapus_keranjang') ?>">
                                 <div class="btn btn-sm btn-danger">Hapus Keranjang</div>
                             </a>
-                            <a href="<?php echo base_url('KeranjangBelanja') ?>">
+                            <a href="<?php echo base_url('pembelian') ?>">
                                 <div class="btn btn-sm btn-primary">Lanjutkan Belanja</div>
                             </a>
                             <a href="<?php echo base_url('KeranjangBelanja/pembayaran') ?>">
