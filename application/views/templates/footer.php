@@ -41,7 +41,7 @@
                     <li class="mx-1"><a href="#"><span class="fa fa-twitter"></span></a></li>
                     <li class="mx-1"><a href="#"><span class="fa fa-google-plus"></span></a></li>
                     <li class="mx-1"><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    <li class="mx-1"><a href="https://api.whatsapp.com/send?phone=6281939123456"><span class="fa fa-whatsapp"></span></a></li>
+                    <li class="mx-1"><a href="https://wa.link/78jqzb"><span class="fa fa-whatsapp"></span></a></li>
 
                 </ul>
             </div>
