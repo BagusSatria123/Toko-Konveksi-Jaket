@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<?php if ($this->session->flashdata('daftar')) { ?>
+	<script>
+		alert("Pendaftaran Berhasil");
+	</script>
+<?php } ?>
 
 <head>
 	<meta charset="utf-8">
@@ -45,7 +50,6 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Silahkan Masuk</div>
 				<p><?php echo $this->session->flashdata('msg'); ?></p>
-
 				<div class="panel-body">
 					<form action="<?php echo base_url() . 'administrator/cekuser' ?>" method="post">
 						<fieldset>

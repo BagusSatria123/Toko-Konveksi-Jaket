@@ -1,6 +1,9 @@
 <?php
 $a = $this->session->userdata('akses');
 $u = $this->session->userdata('user');
+if ($this->session->flashdata('bayar')) {
+    $this->cart->destroy();
+}
 error_reporting(0);
 ini_set('display_errors', 0);
 ?>

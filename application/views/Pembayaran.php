@@ -32,8 +32,9 @@
                         }
                         echo "<h4>Total Belanja Anda: Rp. " . number_format($grand_total, 0, ',', '.');
                     ?>
+
                 </div><br><br>
-                <form method="POST" action="<?php echo base_url() ?>pembayaran/proses_pembayaran/">
+                <form method="POST" action="<?php echo base_url('pembayaran/tambah_pembayaran') ?>" enctype="multipart/form-data">
                     <div class="form-group">
                         <label>Nama Lengkap</label>
                         <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control">
@@ -51,18 +52,18 @@
 
                     <div class="form-group">
                         <label>Jasa Pengiriman</label>
-                        <select class="form-control">
-                            <option>JNE</option>
-                            <option>GOJEK</option>
-                            <OPTION>GRAB</OPTION>
+                        <select name="jasa_kirim" class="form-control">
+                            <option value="JNE">JNE</option>
+                            <option value="GOJEK">GOJEK</option>
+                            <option value="GRAB">GRAB</option>
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label>Pilih Bank </label>
-                        <select class="form-control">
-                            <option>BCA - 1234565432</option>
-                            <option>OVO - 123455432</option>
+                        <select name="pilih_bank" class="form-control">
+                            <option value="BCA - 1234565432">BCA - 1234565432</option>
+                            <option value="OVO - 123455432">OVO - 123455432</option>
                         </select>
                     </div>
 
