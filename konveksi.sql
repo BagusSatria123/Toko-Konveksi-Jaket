@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 12 Jun 2020 pada 16.06
+-- Waktu pembuatan: 06 Des 2020 pada 11.00
 -- Versi server: 10.1.38-MariaDB
 -- Versi PHP: 7.3.4
 
@@ -52,7 +52,8 @@ INSERT INTO `pemesanan` (`id_Pemesanan`, `nama`, `no_telp`, `alamat`, `produk`, 
 (4, 'agsal23', '01920391209', 'jl tahuu', '2', 'Pesan', 'S', 10, 'akowkaowk.JPG', 'pesan ya'),
 (5, 'agsal12', '01920391209', 'jl eko11', '3', 'beli', 'S', 10, '2020-03-25-20-37-41_0.png', 'pesan ya'),
 (6, 'Agsal Alan Livia', '08132232332', 'JL panjaitan no 10', '2', 'memesan jaket dengan kain merah', 'S', 10, 'merah.JPG', 'Memesan'),
-(7, 'Agsal FAP', '081231232112', 'JL Panjaitan no 1010', '2', 'Jaket warna merah dengan Kain katun', 'S', 100, 'merah.JPG', 'Memesan');
+(7, 'Agsal FAP', '081231232112', 'JL Panjaitan no 1010', '2', 'Jaket warna merah dengan Kain katun', 'S', 100, 'merah.JPG', 'Memesan'),
+(8, 'なでしこ', '081231232112', 'お経', '2', 'a', 's', 100, 'default.jpg', 'yaa');
 
 -- --------------------------------------------------------
 
@@ -295,6 +296,29 @@ INSERT INTO `t_kain_warna` (`warna_id`, `warna_nama`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `t_pembayaran`
+--
+
+CREATE TABLE `t_pembayaran` (
+  `IdBayar` int(11) NOT NULL,
+  `NamaLengkap` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+  `AlamatLengkap` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+  `NoTelp` int(15) NOT NULL,
+  `JasaPengiriman` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+  `PilihBank` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
+  `TglBayar` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `t_pembayaran`
+--
+
+INSERT INTO `t_pembayaran` (`IdBayar`, `NamaLengkap`, `AlamatLengkap`, `NoTelp`, `JasaPengiriman`, `PilihBank`, `TglBayar`) VALUES
+(1, 'Meghan', 'jl eko', 2147483647, 'JNE', 'BCA - 1234565432', '2020-12-06 09:57:41');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `t_produkbaju`
 --
 
@@ -476,7 +500,7 @@ CREATE TABLE `t_user` (
 INSERT INTO `t_user` (`user_id`, `user_nama`, `user_username`, `user_password`, `user_level`) VALUES
 (1, 'Agsal FA', 'admin', '21232f297a57a5a743894a0e4a801fc3', '1'),
 (4, 'Meghan', 'meghan', '81dc9bdb52d04dc20036dbd8313ed055', '3'),
-(5, 'agsal', 'agsal', 'cc416e885e44f8645dfa69c4eeaad3df', '2'),
+(5, 'agsal', 'agsal', 'cc416e885e44f8645dfa69c4eeaad3df', '3'),
 (110, 'agsal23', 'agsal23', '202cb962ac59075b964b07152d234b70', '3'),
 (111, 'agsal12', 'agsal12', '202cb962ac59075b964b07152d234b70', '3'),
 (112, 'agsal23', 'agsal', '81dc9bdb52d04dc20036dbd8313ed055', '3'),
@@ -486,8 +510,9 @@ INSERT INTO `t_user` (`user_id`, `user_nama`, `user_username`, `user_password`, 
 (116, 'agsal yooo', 'agsal90', '81dc9bdb52d04dc20036dbd8313ed055', '3'),
 (117, 'sulis', 'admin1', 'e00cf25ad42683b3df678c61f42c6bda', '1'),
 (118, 'Agsal Fairrohmad', 'agsalf', '81dc9bdb52d04dc20036dbd8313ed055', '3'),
-(119, 'livia', 'alan', '81dc9bdb52d04dc20036dbd8313ed055', '3'),
-(121, 'livia', 'livia11', '827ccb0eea8a706c4c34a16891f84e7b', '1');
+(119, 'a1', 'a1', '202cb962ac59075b964b07152d234b70', '3'),
+(120, 'a2', 'a2', '202cb962ac59075b964b07152d234b70', '3'),
+(121, 'agsal23111', '12', '202cb962ac59075b964b07152d234b70', '3');
 
 --
 -- Indexes for dumped tables
@@ -536,6 +561,12 @@ ALTER TABLE `t_kain_warna`
   ADD PRIMARY KEY (`warna_id`);
 
 --
+-- Indeks untuk tabel `t_pembayaran`
+--
+ALTER TABLE `t_pembayaran`
+  ADD PRIMARY KEY (`IdBayar`);
+
+--
 -- Indeks untuk tabel `t_produkbaju`
 --
 ALTER TABLE `t_produkbaju`
@@ -567,7 +598,7 @@ ALTER TABLE `t_user`
 -- AUTO_INCREMENT untuk tabel `pemesanan`
 --
 ALTER TABLE `pemesanan`
-  MODIFY `id_Pemesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_Pemesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `t_belikain_detail`
@@ -580,6 +611,12 @@ ALTER TABLE `t_belikain_detail`
 --
 ALTER TABLE `t_jualproduk_detail`
   MODIFY `d_jual_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT untuk tabel `t_pembayaran`
+--
+ALTER TABLE `t_pembayaran`
+  MODIFY `IdBayar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `t_rencanabaru_detail`
