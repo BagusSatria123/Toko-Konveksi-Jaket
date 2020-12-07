@@ -43,7 +43,7 @@
 				<!--<li><a href="<?php echo base_url() . 'admin/rencana' ?>"><em class="fa fa-bar-chart">&nbsp;</em> RPROD Lama</a></li>
 			<li><a href="<?php echo base_url() . 'admin/bahanproduksi' ?>"><em class="fa fa-hourglass-1">&nbsp;</em> Bahan Produksi</a></li>-->
 				<!-- <li><a href="<?php echo base_url() . 'admin/penjualanproduk' ?>"><em class="fa fa-dollar">&nbsp;</em> Pencatatan Penjualan</a></li> -->
-				<li><a href="<?php echo base_url() . 'admin/chatBot' ?>"><em class="fa fa-dollar">&nbsp;</em>Chat Bot</a></li>
+				<li><a href="<?php echo base_url() . 'admin/chatBot' ?>"><em class="fa fa-comments">&nbsp;</em>Chat Bot</a></li>
 				<li><a href="<?php echo base_url() . 'admin/daftarlaporan' ?>"><em class="fa fa-sticky-note-o">&nbsp;</em> Laporan</a></li>
 
 			<?php } ?>
