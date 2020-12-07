@@ -1,4 +1,10 @@
 <body>
+
+    <?php if ($this->session->flashdata('bayar')) { ?>
+        <script>
+            alert("Pembayaran Berhasil");
+        </script>
+    <?php } ?>
     <!-- mian-content -->
     <section class="mian-content">
 

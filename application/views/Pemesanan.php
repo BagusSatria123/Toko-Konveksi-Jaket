@@ -1,4 +1,9 @@
 <body>
+    <?php if ($this->session->flashdata('pesan')) { ?>
+        <script>
+            alert("Pemesanan Berhasil, Tunggu Konfirmasi Dari Admin lewat WhatsApp");
+        </script>
+    <?php } ?>
     <!-- mian-content -->
     <section class="mian-content">
 
@@ -94,7 +99,6 @@
                         </form>
                     </div>
                 </div>
-
                 <div class="row mt-lg-5 mt-md-4 mt-4">
                 </div>
             </div>

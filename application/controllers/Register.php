@@ -24,7 +24,7 @@ class Register extends CI_Controller
             redirect('register');
         } else {
             $this->m_pengguna->simpan_pengguna($nama, $username, $password, $level);
-            echo $this->session->set_flashdata('msg', '<label class="label label-success"> Berhasil Mendaftar</label>');
+            echo $this->session->set_flashdata('daftar', '<label class="label label-success"> Berhasil Mendaftar</label>');
             redirect('administrator');
         }
 

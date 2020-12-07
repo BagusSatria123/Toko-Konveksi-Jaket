@@ -84,7 +84,7 @@ class Pemesanan extends CI_Controller
     {
         if ($this->session->userdata('akses') == '3' || $this->session->userdata('akses') == '1') {
             $this->M_pemesananMasuk->tambah_pesanan();
-            echo $this->session->set_flashdata('msg', '<label class="label label-success">Pesanan Berhasil ditambahkan</label>');
+            echo $this->session->set_flashdata('pesan', '<label class="label label-success">Pesanan Berhasil ditambahkan</label>');
             redirect('Pemesanan');
         } else {
             echo "halaman tidak ditemukan";
