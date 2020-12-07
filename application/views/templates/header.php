@@ -43,7 +43,7 @@ ini_set('display_errors', 0);
             <li class="mr-lg-4 mr-3">
                 <a href="<?php echo base_url() ?>About">About</a></li>
 
-            <li class="mr-lg-4 mr-3">
+            <li class="nav navbar-nav" class="mr-lg-4 mr-3">
                 <!-- First Tier Culture -->
                 <label for="drop-2" class="toggle">Menu <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
                 <a href="#">Menu <span class="fa fa-angle-down" aria-hidden="true"></span></a>

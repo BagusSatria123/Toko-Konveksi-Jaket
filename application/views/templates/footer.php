@@ -37,11 +37,11 @@
         <div class="row">
             <div class="col-md-4">
                 <ul class="social-icons scial justify-content-end">
-                    <li class="mr-1"><a href="https://www.facebook.com/Siparajack-Malang-105974328033589"><span class="fa fa-facebook"></span></a></li>
-                    <li class="mx-1"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                    <li class="mx-1"><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                    <li class="mx-1"><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    <li class="mx-1"><a href="https://wa.link/dvs7l6"><span class="fa fa-whatsapp"></span></a></li>
+                    <li class="mr-1"><a href="https://www.facebook.com/Siparajack-Malang-105974328033589" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                    <li class="mx-1"><a href="https://twitter.com/twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                    <li class="mx-1"><a href="https://myaccount.google.com/profile" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+                    <li class="mx-1"><a href="https://www.linkedin.com/feed/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                    <li class="mx-1"><a href="https://wa.link/dvs7l6" target="_blank"><span class="fa fa-whatsapp"></span></a></li>
                 </ul>
             </div>
         </div>
